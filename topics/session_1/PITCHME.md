@@ -3,9 +3,9 @@
 
 +++
 
-## Mengapa Pemrograman Statistik
+## Mengapa Pemrograman Statistik?
 - Pada analisis statistik, pekerjaan terbesar anda adalah pada SEBELUM dan SESUDAH analisis
-- SEBELUM analisis - data yang tersedia seringkali belum dalam kondisi siap analisis:
+- SEBELUM analisis:
     - data mentah tersedia dalam jenis file yang berbeda-beda
     - missing values
     - inkonsistensi anter sumber data
@@ -14,7 +14,7 @@
     
 +++
 
-## Mengapa Pemrograman Statistik
+## Mengapa Pemrograman Statistik?
 - SETELAH analisis, anda dituntut untuk menampilkan hasil secara effektif:
     - Tidak semua hasil analisis perlu dan dapat ditampilkan untuk publikasi
     - kebutuhan format tabel dan grafik untuk publikasi yang berbeda (laporan, journal, poster)
