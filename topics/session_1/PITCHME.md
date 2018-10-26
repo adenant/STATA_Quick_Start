@@ -4,8 +4,8 @@
 +++
 
 ## Mengapa Pemrograman Statistik
-- Sebelum anda dapat menjalankan analisis statistik, pekerjaan terbesar anda adalah pada tahapan mempersiapkan data SEBELUM analisis, dan menampilkan hasil SETELAH analisis
-- Data sangat jarang yang tersedia dalam format yang siap analisis:
+- Pada analisis statistik, pekerjaan terbesar anda adalah pada SEBELUM dan SESUDAH analisis
+- SEBELUM analisis - data yang tersedia seringkali belum dalam kondisi siap analisis:
     - data mentah tersedia dalam jenis file yang berbeda-beda
     - missing values
     - inkonsistensi anter sumber data
@@ -16,7 +16,7 @@
 +++
 
 ## Mengapa Pemrograman Statistik
-- Setelah melakukan analisis, anda dituntut untuk menampilkan hasil secara effektif:
+- SETELAH analisis, anda dituntut untuk menampilkan hasil secara effektif:
     - Tidak semua hasil analisis perlu dan dapat ditampilkan untuk publikasi
     - Format publikasi yang berbeda membutuhkan format tabel dan grafik yang berbeda pula (laporan, journal, poster)
     - Beberapa jenis publikasi memiliki standard tampilan tabel dan grafik visual (ukuran, resolusi)
