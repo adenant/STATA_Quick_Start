@@ -1,2 +1,3 @@
 ---?include=topics/cover/PITCHME.md
 ---?include=topics/agenda/PITCHME.md
+---?include=topics/session_1/PITCHME.md
