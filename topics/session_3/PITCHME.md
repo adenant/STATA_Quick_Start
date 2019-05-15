@@ -30,7 +30,7 @@ foreach <loop control macro> in <list> {
 
 }
 ```
-Note: another syntax uses “of” instead of “in”
+- Note: another syntax uses “of” instead of “in”
 	“in” is the easier syntax
 
 
@@ -44,7 +44,7 @@ forvalues <loop control macro> = n(increment)N {
 
 }
 ```
-Note: n is the starting number, whereas N is the last number
+- Note: n is the starting number, whereas N is the last number
 
 +++
 ## Loops
