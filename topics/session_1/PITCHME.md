@@ -102,8 +102,10 @@
     - if, in, weights
     - `,` post-comma options
 - Example:
-    - `. sort Treated`
-    - `. by Treated: sum ZeroFillPre if Chain==“Yes” , detail`
+```
+. sort Treated
+. by Treated: sum ZeroFillPre if Chain==“Yes” , detail
+```
     
 +++
 
@@ -135,9 +137,11 @@
 - BY FAR the most common is “if”
 - “if” applies the command only to variables that meet some condition
 - Examples:
-    - `.sum ZeroFillPost if Chain == “Yes”`
-    - `.sum ZeroFillPost if ZeroFillPre > 0.6`
-    - `.sum ZeroFillPost if prov_cnty_cd != 01`
+```
+.sum ZeroFillPost if Chain == “Yes”
+.sum ZeroFillPost if ZeroFillPre > 0.6
+.sum ZeroFillPost if prov_cnty_cd != 01
+```
 
 +++
 
@@ -155,8 +159,10 @@
 
  
 - `in:` applies the operation to specified range of observations
-    - `. sum ZeroFillPre in 1/10`
-    - `. sum ZeroFillPre in -11/-2`
+```
+. sum ZeroFillPre in 1/10
+. sum ZeroFillPre in -11/-2
+```
 - VERY rarely used
 
 +++
@@ -175,8 +181,10 @@
 - These are specified AFTER a comma
 - These are specific to the command
 - How do you learn what options are available for a given command? Example:
-    - `. help sum`
-    - `. help table`
+```
+. help sum
+. help table
+```
 - Documentation manuals have more detail
 
 +++
