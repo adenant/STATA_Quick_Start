@@ -1,5 +1,5 @@
 # Sesi 1
-## *Pengantar Pemrograman Statistik, Pengenalan STATA, dan Sintaksis Perintah dalam STATA*
+## *Intro to Statistical Programming, STATA, and STATA syntax*
 
 +++
 
