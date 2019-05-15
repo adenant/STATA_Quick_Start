@@ -140,7 +140,7 @@
 - Problem: where does STATA find/save the data?
   - Specify current working directory
   
-  +++
++++
 
 # Do Files
 
@@ -226,4 +226,31 @@ Variant 2:
     - Regress Y on X using robust standard errors
 - My do files typically contain a LOT of macros
 
++++
 
+# Macros
+
+- Optional Advanced tip: deferred expansion [hidden inside U 18.3.11]
+- If a macro definition calls another macro, it expands that macro at the time of definition
+```
+. local Fred = 4
+. local Wilma = `Fred’ + 3
+. local Fred = 8
+. disp `Wilma’
+```
+
++++
+
+# Macros
+
+- Putting a \ tells STATA to hold off on expanding the macro
+```
+. local Fred = 4
+. local Wilma \`Fred’ + 3
+. local Fred = 8
+. disp `Wilma’
+```
+- Note: if using macros in a filename, use / instead of \
+```
+. save `DirectoryToSaveIn’/`FileName’
+```
