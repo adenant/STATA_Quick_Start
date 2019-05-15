@@ -39,7 +39,10 @@
   - Print text to the screen (use quotes)
   - Turn STATA into a glorified calculator (don’t use quotes)
 - Example:
-  - `. disp 2+2` or `. disp “2+2”`
+```
+. disp 2+2
+. disp “2+2”
+```
   
 +++
 
@@ -47,7 +50,9 @@
 
 - We want to print the line “Hello World”
 - Do we need to use quotes or not?
-  - `. disp “Hello World”`
+```
+. disp “Hello World”
+```
 - Now write a code in a .do file and execute it to print the line “Hello World”
 
 +++
