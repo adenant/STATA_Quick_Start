@@ -155,7 +155,7 @@
 
  
 - `in:` applies the operation to specified range of observations
-    - `. sum ZeroFillPre in 1/10'
+    - `. sum ZeroFillPre in 1/10`
     - `. sum ZeroFillPre in -11/-2`
 - VERY rarely used
 
