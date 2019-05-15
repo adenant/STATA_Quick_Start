@@ -39,8 +39,7 @@
   - Print text to the screen (use quotes)
   - Turn STATA into a glorified calculator (don’t use quotes)
 - Example:
-  - `. disp 2+2`
-  - `. disp “2+2”`
+  - `. disp 2+2` or `. disp “2+2”`
   
 +++
 
@@ -62,6 +61,11 @@
   - Write to catch mistakes
   - Write to not know what’s going on
   - Write to change your mind
+
++++
+
+# Do Files
+- Principles of Do File writing (cont.)
   - Don’t repeat yourself
   - If you modify data, save to new file
 - Reminder: SAVE BACKUPS OF EVERYTHING! BACKUP EARLY AND OFTEN!!!!!!!!
@@ -84,7 +88,7 @@
 - Comments
   - `/*     */`: Useful for commenting out whole blocks of code
   - `//`: For general comments
-  - `///': Kills the line break, so you can write long lines; and must precede with a space
+  - `///`: Kills the line break, so you can write long lines; and must precede with a space
   - `*` : Also comments out rest of the line; I often use ********* to denote “section” breaks in my code
 
 
