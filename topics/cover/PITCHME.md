@@ -1,4 +1,4 @@
-## Pengenalan Pemrograman Statistik dengan Menggunakan STATA
+## Introduction to Statistical Programming using STATA
 
 +++
 
@@ -12,4 +12,4 @@ adenant@sappk.itb.ac.id
 
 +++
 
-Presentasi ini dapat diakses di https://gitpitch.com/adenant/STATA_Quick_Start/master#/
+Presentation can be accesed at https://gitpitch.com/adenant/STATA_Quick_Start/master#/
