@@ -174,16 +174,16 @@
 
 - To define a local:
   - Variant 1:
+  
 ```
 . local Fred 2+2
-
 ```
-  - stores “2+2” in a macro called Fred
-  - Evaluates “2+2” when the macro is called
-Variant 2:
+    - stores “2+2” in a macro called Fred
+    - Evaluates “2+2” when the macro is called
+  - Variant 2:
+
 ```
 . local Fred = 2+2
-
 ```
   - Evaluates right-hand side immediately and stores results in Fred
 
