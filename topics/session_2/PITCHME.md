@@ -258,3 +258,50 @@
 ```
 . save `DirectoryToSaveIn’/`FileName’
 ```
+
++++
+
+# Macros
+
+- This is just the tip of the iceberg for macros…
+
++++
+
+# Accessing Results
+
+- One of my rules was to “write as though you don’t know what your results are”
+- If you need your program to work with the maximum value of a variable, calculate it
+- If you need to work with the mean of a variable, calculate it
+- If you need to work with a regression coefficient, calculate it
+
++++
+
+# Accessing Results
+
+- Let’s load the dataset
+```
+. sum ZeroFillPre
+```
+- What if I want to do something with this?
+```
+. disp “The mean of ZeroFillPre is ” r(mean) 
+```
++++
+
+# Accessing Results
+
+- The last NON-ESTIMATION command stores results in the RETURN LIST
+- What’s currently in memory?
+```
+. return list
+```
+- Changes after next command
+```
+. sum ZeroFillPre , detail
+. return list
+```
++++
+
+# Accessing Results
+
+- ESTIMATION results are stored in the `ereturn list`
