@@ -53,7 +53,6 @@
 ## Introduction to STATA
 
 - Let’s open STATA
-- There are at least 5 windows that are typically visible
     - Upper-middle: the results window, where STATA communicates to you
     - Bottom: the command bar, where you communicate to STATA
     - Upper-left: the review window, where you see what you just typed
@@ -84,12 +83,73 @@
 
 +++
 
+## STATA Command Line
 
 - OK, now let’s do stuff
 - Most STATA commands follow the same basic syntax
 - You pretty much always have a command name and a list of variables
-`.summarize ZeroFillPre`
+    -`.summarize ZeroFillPre`
 - Then you can expand the command with lots of options
+
++++
+
+## STATA Command Line
+
+- Structure of STATA command line:
+    - Pre-colon stuff `:`
+    - Command name
+    - Varlists
+    - if, in, weights
+    - `,` post-comma options
+- Example:
+    - `. sort Treated`
+    - `. by Treated: sum ZeroFillPre if Chain==“Yes” , detail`
+    
++++
+
+## STATA Command Line
+
+- Pre-colon options:
+    - `by <varlist> :' repeats the command for different subgroups, defined by <varlist>
+        - The data must be sorted by <varlist>
+    - `svy:` tells STATA to adjust for survey features (we’ll cover this later)
+    - Some other features require specification before the colon
+    - Pre-colon options aren’t used very often
+
++++
+
+## STATA Command Line
+
+- Varlists:
+    - Some commands take multiple variables
+    - For some commands, the order of the variables matters
+        - Example: regress
+    - For others, the order doesn’t matter
+        - Example: drop, keep, summarize
+
++++
+
+## STATA Command Line
+
+- AFTER the varlists but BEFORE the (optional) comma: if/in/weight
+- BY FAR the most common is “if”
+- “if” applies the command only to variables that meet some condition
+- Examples:
+    - `.sum ZeroFillPost if Chain == “Yes”`
+    - `.sum ZeroFillPost if ZeroFillPre > 0.6`
+    - `.sum ZeroFillPost if prov_cnty_cd != 01`
+
++++
+
+## STATA Command Line
+
+- Operators:
+    - Logical: `&    |    !     ~`
+    - Relational:  `>   <     >=      <=    ==    !=      ~=`
+- NOTE WELL: you need TWO equal signs == to test equality
+- Single equal signs = are reserved for assigning values
+
+ 
 
 
 +++
