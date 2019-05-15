@@ -5,7 +5,7 @@
 
 ## Introduction
 - There’s a lot more to actually doing statistics than just running the analyses and tests
-- Many statistical analysis software have a LOT of pre-packaged routines to run regressions, probits, instrumental variables, random effects, zero-inflated negative binomial models….
+- Many statistical analysis software have a LOT of pre-packaged routines to run statistical models….
 - Given the computing power of modern computers, these analyses may only take seconds (depending on how large the datasets is)
 - Before you can use those commands, your data need to be ready
     
