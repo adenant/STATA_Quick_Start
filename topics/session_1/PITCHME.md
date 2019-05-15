@@ -110,7 +110,7 @@
 ## STATA Command Line
 
 - Pre-colon options:
-    - `by <varlist> :' repeats the command for different subgroups, defined by <varlist>
+    - `by <varlist> :` repeats the command for different subgroups, defined by <varlist>
         - The data must be sorted by <varlist>
     - `svy:` tells STATA to adjust for survey features (we’ll cover this later)
     - Some other features require specification before the colon
@@ -149,41 +149,41 @@
 - NOTE WELL: you need TWO equal signs == to test equality
 - Single equal signs = are reserved for assigning values
 
++++
+
+## STATA Command Line
+
  
-
-
-+++
-## Mengapa Pemrograman Statistik?
-
-- Aturan penting dalam analisis kuantititatif:
-    - Lakukan keseluruhan proses penyiapan data, analisis, dan penyajian hasil dalam program
-    - Anda masih dapat menggunakan dataset asli dan melakukan replikasi keseluruhan proses analisis hanya dengan menjalankan program yang telah dibuat
+- `in:` applies the operation to specified range of observations
+    - `. sum ZeroFillPre in 1/10'
+    - `. sum ZeroFillPre in -11/-2`
+- VERY rarely used
 
 +++
 
-## Apa itu Pemrograman Statistik?
-- Proses otomatisasi langkah-langkah kerja untuk melakukan proses penyiapan data, analisis, dan penyajian hasil
+## STATA Command Line
 
-+++ 
+- Weights are also specified before the comma
+- Very important when dealing with survey data
+- We will not cover this in this workshop
 
-## Pengenalan Perangkat Lunak STATA
-
-- Perangkat lunak untuk analisis statistik yang diproduksi oleh StataCorp
-- Populer di disiplin ilmu sosial dan ekonomika
-- STATA memiliki beberapa tipe:
-    - STATA SE (fully equipped version)
-    - STATA MP (fully equipped and designed to use multiple processors)
-    - STATA IC (sama dengan SE, tetapi memiliki keterbatasan jumlah variabel dan *n*)
-    - Small STATA (student version)
-    
 +++
 
-## Pengenalan Perangkat Lunak STATA
-- Let’s open STATA
-- Terdapat 5 windows standard pada interface STATA
-    - Tengah atas: jendela hasil, tempat dimana STATA menampilkan hasil
-    - Tengah bawah: jendela perintah -  tempat anda memasukkan input perintah
-    - Kiri atas: jendela review - tempat dimana anda bisa melihat kembali perintah yang sudah dieksekusi
-    - Kiri bawah: jenedela variable - tempat STATA menampilkan informasi tentang dataset anda
-    - Kanan: jendela properties - tempat STATA menampilkan informasi tentang variable
-    
+## STATA Command Line
+
+- Most commands have a huge number of potential options that you can apply
+- These are specified AFTER a comma
+- These are specific to the command
+- How do you learn what options are available for a given command? Example:
+    - `. help sum`
+    - `. help table`
+- Documentation manuals have more detail
+
++++
+
+## STATA Command Line
+
+- Let’s try out some STATA commands
+- Open “STATA Basic Commands Exercise.docx”
+- Try to accomplish the specified tasks; hints are in “(…)
+
