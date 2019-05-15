@@ -1,7 +1,11 @@
 ## Agenda
 
-- Sesi 1 : Pengantar Pemrograman Statistik, Pengenalan STATA, Sintaksis Perintah dalam STATA
-- Sesi 2 : Pengenalan *.DO* file, macro, memperoleh dan menyimpan hasil ke dalam macro
-- Sesi 3 : Dasar-dasar looping, Pengenalan matriks, menyimpan hasil dalam matriks
-- Sesi 4 : Latihan dengan *hands-on case*
+- Session 1: 
+  - *Intro to Statistical Programming; Intro to Stata; Stata’s command line*
+- Session 2:
+  - *Do Files; Macro*
+- Session 3:
+  - *Introduction to looping; Storing results excels*
+- Session 4: Hands-on exercise
+
 
