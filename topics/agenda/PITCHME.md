@@ -6,6 +6,7 @@
   - *Do Files; Macro*
 - Session 3:
   - *Introduction to looping; Storing results excels*
-- Session 4: Hands-on exercise
+- Session 4:
+  - *Hands-on exercise*
 
 
