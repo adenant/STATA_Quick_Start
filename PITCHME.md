@@ -2,3 +2,5 @@
 ---?include=topics/agenda/PITCHME.md
 ---?include=topics/session_1/PITCHME.md
 ---?include=topics/session_2/PITCHME.md
+---?include=topics/session_3/PITCHME.md
+---?include=topics/session_4/PITCHME.md
