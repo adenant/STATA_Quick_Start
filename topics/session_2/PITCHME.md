@@ -171,8 +171,10 @@
 - To use a macro
   - Type `<macro name>’
   - NOTE WELL: the left-hand slashy thing is NOT an apostrophe, but the thing under the tilde on the upper left-hand side of the keyboard
-    - `. local Fred = 2+2`
-    - `. disp \\` Fred’`
+```
+    . local Fred = 2+2
+    . disp `Fred’
+```
 
 
 
