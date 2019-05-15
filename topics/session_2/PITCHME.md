@@ -180,11 +180,11 @@
 . local Fred 2+2
 ```
   - Variant 2:
-
+    - Evaluates right-hand side immediately and stores results in Fred
 ```
 . local Fred = 2+2
 ```
-  - Evaluates right-hand side immediately and stores results in Fred
+
 
 +++
 
