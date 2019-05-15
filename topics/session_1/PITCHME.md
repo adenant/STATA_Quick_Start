@@ -3,23 +3,94 @@
 
 +++
 
-## Mengapa Pemrograman Statistik?
-- Pada analisis statistik, pekerjaan terbesar anda adalah pada SEBELUM dan SESUDAH analisis
-- SEBELUM analisis:
-    - data mentah tersedia dalam jenis file yang berbeda-beda
-    - missing values
-    - inkonsistensi anter sumber data
-    - perlu menggabungkan data dari sumber yang berbeda
-    - variable yang diperlukan tidak tersedia
+## Introduction
+- There’s a lot more to actually doing statistics than just running the analyses and tests
+- Many statistical analysis software have a LOT of pre-packaged routines to run regressions, probits, instrumental variables, random effects, zero-inflated negative binomial models….
+- Given the computing power of modern computers, these analyses may only take seconds (depending on how large the datasets is)
+- Before you can use those commands, your data need to be ready
     
 +++
 
-## Mengapa Pemrograman Statistik?
-- SETELAH analisis, anda dituntut untuk menampilkan hasil secara effektif:
-    - Tidak semua hasil analisis perlu dan dapat ditampilkan untuk publikasi
-    - kebutuhan format tabel dan grafik untuk publikasi yang berbeda (laporan, journal, poster)
-    - persyaratan standard tampilan tabel dan grafik visual (ukuran, resolusi)
-    - Gaya tampilan tabel dan grafik berbeda tergantung *audience* publikasi anda
+## Introduction
+- Your data will NEVER come in a ready-to-use form
+- You could prepare the data in Excel with a lot of copying and pasting
+    - Time consuming
+    - Hard to document
+    - If anything changes, you have to start from scratch
+- MUCH better to learn how to program!
+
++++
+## Why statistical programming?
+
+- Efficiency: Automate routine tasks and let the computer do them over and over again for you
+- Power: Do things that aren’t part of the package (data manipulation, custom functions, etc.)
+- Documentation: Keep all notes on what have been done on data manipulations and analyses
+- Modification: Allow for performing changes, adjustment, modification, without the need to do the whole routine all over again
+
++++
+
+## Why Stata?
+
+- Has a LOT of pre-packaged routines to perform many data manipulations and analyses
+- Relatively easy to learn (has pull-down menu and command bar)
+- Has the facility to do programming
+- and many more
+
++++
+
+## Introduction to STATA
+
+- STATA comes in several different flavors
+    - The grown-up versions of STATA are
+        - STATA SE (fully equipped STATA)
+        - STATA MP (fully equipped and designed to use multiple processors)
+    - The impaired versions are
+        - STATA IC (like SE, but with built in limits)
+        - Small STATA
+
++++
+
+## Introduction to STATA
+
+- Let’s open STATA
+- There are at least 5 windows that are typically visible
+    - Upper-middle: the results window, where STATA communicates to you
+    - Bottom: the command bar, where you communicate to STATA
+    - Upper-left: the review window, where you see what you just typed
+    - Lower-left: the variables window, where you see information about your dataset
+    - Right: Variable properties window, where you see information about the variable
+
+
++++
+
+## Introduction to STATA
+
+- Let’s open a made-up dataset about pharmacies
+    - Hands_on_Exercise data_1
+- The sample has 25 fictional pharmacies
+- Notice that the command shows up in the Review window
+- Variables now show up in the Variables window
+
+
++++
+
+## Introduction to STATA
+
+- In addition, STATA has 3 very useful windows that open as separate windows
+- Open them from the Window menu
+    - Do-file window: where you’ll write programs (we’ll do that one later)
+    - Viewer: where you access documentation (also for later)
+    - The Data Editor, where you can see the data
+
++++
+
+
+- OK, now let’s do stuff
+- Most STATA commands follow the same basic syntax
+- You pretty much always have a command name and a list of variables
+`.summarize ZeroFillPre`
+- Then you can expand the command with lots of options
+
 
 +++
 ## Mengapa Pemrograman Statistik?
