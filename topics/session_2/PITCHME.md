@@ -174,12 +174,11 @@
 
 - To define a local:
   - Variant 1:
-  
+    - stores “2+2” in a macro called Fred
+    - Evaluates “2+2” when the macro is called
 ```
 . local Fred 2+2
 ```
-    - stores “2+2” in a macro called Fred
-    - Evaluates “2+2” when the macro is called
   - Variant 2:
 
 ```
@@ -222,6 +221,11 @@
 ```
 . reg Y X , robust
 ```
+
++++
+
+# Macros
+- STATA takes 2 passes (cont.)
   - Pass 2: actually run the code
     - Regress Y on X using robust standard errors
 - My do files typically contain a LOT of macros
