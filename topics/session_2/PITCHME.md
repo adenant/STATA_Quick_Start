@@ -146,7 +146,9 @@
 
 - Use “Change Working Directory” under File to locate the folder where your DATA are located
 - This doesn’t need to be the same place as your do file, but any “helper” do files must be in the same place
-   - `. use Lecture2_2013_09_13.dta"` 
+```
+   . use Lecture2_2013_09_13.dta"
+```
 - Alternatively, specify the working directory in the .do file using .cd command
 
   +++
@@ -154,7 +156,9 @@
 # Do Files
 
 - useful tip: to have STATA run its entire program without pausing every screen:
-  - `. set more off`
+```
+. set more off
+```
   
 +++
 
@@ -168,6 +172,25 @@
 
 # Macros
 
+- To define a local:
+  - Variant 1:
+```
+. local Fred 2+2
+
+```
+  - stores “2+2” in a macro called Fred
+  - Evaluates “2+2” when the macro is called
+Variant 2:
+```
+. local Fred = 2+2
+
+```
+  - Evaluates right-hand side immediately and stores results in Fred
+
++++
+
+# Macros
+
 - To use a macro
   - Type `<macro name>’
   - NOTE WELL: the left-hand slashy thing is NOT an apostrophe, but the thing under the tilde on the upper left-hand side of the keyboard
@@ -176,6 +199,31 @@
     . disp `Fred’
 ```
 
++++
 
+# Macros
+
+- Local macros are LOCAL to the do file that creates them
+- If you define a macro in a do file, it will NOT be available interactively
+- If you define a macro interactively, it will NOT be available in a do file
+
++++
+
+# Macros
+
+- You can store ANYTHING in macros
+- STATA “expands” macros
+```
+. local reg_options , robust
+. reg Y X `reg_options’
+```
+- STATA takes 2 passes
+  - Pass 1: expand macros: 
+```
+. reg Y X , robust
+```
+  - Pass 2: actually run the code
+    - Regress Y on X using robust standard errors
+- My do files typically contain a LOT of macros
 
 
