@@ -1,4 +1,4 @@
-# Sesi 1
+# Session 1
 ## *Intro to Statistical Programming, STATA, and STATA syntax*
 
 +++
