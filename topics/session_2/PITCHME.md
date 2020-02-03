@@ -208,16 +208,16 @@
 ### Macros
 
 - You can store ANYTHING in macros
-- STATA “expands” macros
-```
-. local reg_options , robust
-. reg Y X `reg_options’
-```
+  - STATA “expands” macros
+  ```
+  . local reg_options , robust
+  . reg Y X `reg_options’
+  ```
 - STATA takes 2 passes
   - Pass 1: expand macros: 
-```
-. reg Y X , robust
-```
+  ```
+  . reg Y X , robust
+  ```
 
 +++
 
