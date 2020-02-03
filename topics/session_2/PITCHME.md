@@ -276,26 +276,26 @@
 ### Accessing Results
 
 - Let’s load the dataset
-```
-. sum ZeroFillPre
-```
+  ```
+  . sum ZeroFillPre
+  ```
 - What if I want to do something with this?
-```
-. disp “The mean of ZeroFillPre is ” r(mean) 
-```
+  ```
+  . disp “The mean of ZeroFillPre is ” r(mean) 
+  ```
 +++
 
 ### Accessing Results
 
 - The last NON-ESTIMATION command stores results in the RETURN LIST
 - What’s currently in memory?
-```
-. return list
-```
+  ```
+  . return list
+  ```
 - Changes after next command
-```
-. sum ZeroFillPre , detail
-. return list
+  ```
+  . sum ZeroFillPre , detail
+  . return list
 ```
 +++
 
