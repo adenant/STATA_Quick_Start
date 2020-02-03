@@ -13,7 +13,7 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - To work with do files:
   - From STATA’s window menu, select Do File Editor
@@ -25,13 +25,13 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - NOTE WELL: you CANNOT open do files directly from STATA or by clicking on the file; you MUST be in the do file editor!!!!!!
 
 +++
 
-# Do Files
+### Do Files
 
 - Example: let’s write the words “Hello World” on the screen
 - Use the “display” command
@@ -46,7 +46,7 @@
   
 +++
 
-# Do Files
+### Do Files
 
 - We want to print the line “Hello World”
 - Do we need to use quotes or not?
@@ -57,7 +57,7 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - You should do everything in do files
 - Principles of Do File writing
@@ -69,7 +69,7 @@
 
 +++
 
-# Do Files
+### Do Files
 - Principles of Do File writing (cont.)
   - Don’t repeat yourself
   - If you modify data, save to new file
@@ -77,7 +77,7 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - Write for the future
   - You will be coming back to this program later
@@ -88,7 +88,7 @@
     
 +++
 
-# Do Files
+### Do Files
 
 - Comments
   - `/*     */`: Useful for commenting out whole blocks of code
@@ -98,14 +98,14 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - Begin with a short note about the purpose of the do file
 - Specify the condition that the program should be in when you start
 
 +++
 
-# Do Files
+### Do Files
 
 - Each dataset should be created without altering the original data
 - The program saves the modified data to a different file
@@ -117,7 +117,7 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - Write to change your mind
 - DON’T “hard code” values in the middle of your code
@@ -127,7 +127,7 @@
 
 +++
 
-# Do Files
+### Do Files
 
 - EVERY time you repeat yourself, you create room to make mistakes
   - Forget to change something
@@ -136,7 +136,7 @@
 - You specify what changes
 
 +++
-# Do Files
+### Do Files
 
 - Good practice: if a do file alters the data, it saves the altered data to a new dataset with a different name
 - STATA opens the dataset it uses
@@ -145,7 +145,7 @@
   - Specify current working directory
   
 +++
-# Do Files
+### Do Files
 
 - Use “Change Working Directory” under File to locate the folder where your DATA are located
 - This doesn’t need to be the same place as your do file, but any “helper” do files must be in the same place
@@ -155,7 +155,7 @@
 - Alternatively, specify the working directory in the .do file using .cd command
 
 +++
-# Do Files
+### Do Files
 
 - useful tip: to have STATA run its entire program without pausing every screen:
 ```
@@ -164,14 +164,14 @@
   
 +++
 
-# Macros
+### Macros
 
 - The heart and soul of programming in STATA is the local macro
 - In most programming languages, these would be called “local variables”
 - In STATA, variable refers to the data, so we call them “local macros” or “locals”
 
 +++
-# Macros: How to define a local macro:
+### Macros: How to define a local macro:
 - Variant 1:
   - Stores “2+2” in a macro called Fred
   - Evaluates “2+2” when the macro is called
@@ -185,7 +185,7 @@
 ```
 +++
 
-# Macros: To use a macro
+### Macros: To use a macro
 
 - Type `<macro name>’
 - NOTE WELL: the left-hand slashy thing is NOT an apostrophe, but the thing under the tilde on the upper left-hand side of the keyboard
@@ -197,7 +197,7 @@
 
 +++
 
-# Macros
+### Macros
 
 - Local macros are LOCAL to the do file that creates them
   - If you define a macro in a do file, it will NOT be available interactively
@@ -205,7 +205,7 @@
 
 +++
 
-# Macros
+### Macros
 
 - You can store ANYTHING in macros
 - STATA “expands” macros
@@ -221,7 +221,7 @@
 
 +++
 
-# Macros
+### Macros
 - STATA takes 2 passes (cont.)
   - Pass 2: actually run the code
     - Regress Y on X using robust standard errors
@@ -229,7 +229,7 @@
 
 +++
 
-# Macros
+### Macros
 
 - Optional Advanced tip: deferred expansion [hidden inside U 18.3.11]
 - If a macro definition calls another macro, it expands that macro at the time of definition
@@ -242,7 +242,7 @@
 
 +++
 
-# Macros
+### Macros
 
 - Putting a \ tells STATA to hold off on expanding the macro
 ```
@@ -258,13 +258,13 @@
 
 +++
 
-# Macros
+### Macros
 
 - This is just the tip of the iceberg for macros…
 
 +++
 
-# Accessing Results
+### Accessing Results
 
 - One of my rules was to “write as though you don’t know what your results are”
 - If you need your program to work with the maximum value of a variable, calculate it
@@ -273,7 +273,7 @@
 
 +++
 
-# Accessing Results
+### Accessing Results
 
 - Let’s load the dataset
 ```
@@ -285,7 +285,7 @@
 ```
 +++
 
-# Accessing Results
+### Accessing Results
 
 - The last NON-ESTIMATION command stores results in the RETURN LIST
 - What’s currently in memory?
@@ -299,6 +299,6 @@
 ```
 +++
 
-# Accessing Results
+### Accessing Results
 
 - ESTIMATION results are stored in the `ereturn list`
