@@ -136,7 +136,6 @@
 - You specify what changes
 
 +++
-
 # Do Files
 
 - Good practice: if a do file alters the data, it saves the altered data to a new dataset with a different name
@@ -146,7 +145,6 @@
   - Specify current working directory
   
 +++
-
 # Do Files
 
 - Use “Change Working Directory” under File to locate the folder where your DATA are located
@@ -156,8 +154,7 @@
 ```
 - Alternatively, specify the working directory in the .do file using .cd command
 
-  +++
-
++++
 # Do Files
 
 - useful tip: to have STATA run its entire program without pausing every screen:
