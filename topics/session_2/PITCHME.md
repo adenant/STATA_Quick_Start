@@ -171,30 +171,25 @@
 - In STATA, variable refers to the data, so we call them “local macros” or “locals”
 
 +++
-
-# Macros
-
-- To define a local:
-  - Variant 1:
-    - stores “2+2” in a macro called Fred
-    - Evaluates “2+2” when the macro is called
+# Macros: How to define a local macro:
+- Variant 1:
+  - Stores “2+2” in a macro called Fred
+  - Evaluates “2+2” when the macro is called
 ```
 . local Fred 2+2
 ```
-  - Variant 2:
-    - Evaluates right-hand side immediately and stores results in Fred
+- Variant 2:
+  - Evaluates right-hand side immediately and stores results in Fred
 ```
 . local Fred = 2+2
 ```
-
-
 +++
 
-# Macros
+# Macros: To use a macro
 
-- To use a macro
-  - Type `<macro name>’
-  - NOTE WELL: the left-hand slashy thing is NOT an apostrophe, but the thing under the tilde on the upper left-hand side of the keyboard
+- Type `<macro name>’
+- NOTE WELL: the left-hand slashy thing is NOT an apostrophe, but the thing under the tilde on the upper left-hand side of the keyboard
+
 ```
     . local Fred = 2+2
     . disp `Fred’
@@ -205,8 +200,8 @@
 # Macros
 
 - Local macros are LOCAL to the do file that creates them
-- If you define a macro in a do file, it will NOT be available interactively
-- If you define a macro interactively, it will NOT be available in a do file
+  - If you define a macro in a do file, it will NOT be available interactively
+  - If you define a macro interactively, it will NOT be available in a do file
 
 +++
 
