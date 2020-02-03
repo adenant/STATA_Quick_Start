@@ -45,18 +45,16 @@
 ```
   
 +++
-
 ### Do Files
 
 - We want to print the line “Hello World”
 - Do we need to use quotes or not?
-```
-. disp “Hello World”
-```
+  ```
+  . disp “Hello World”
+  ```
 - Now write a code in a .do file and execute it to print the line “Hello World”
 
 +++
-
 ### Do Files
 
 - You should do everything in do files
