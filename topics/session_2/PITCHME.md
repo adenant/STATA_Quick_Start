@@ -296,7 +296,8 @@
   ```
   . sum ZeroFillPre , detail
   . return list
-```
+  ```
+  
 +++
 
 ### Accessing Results
