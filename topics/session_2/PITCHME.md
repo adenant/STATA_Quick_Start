@@ -170,17 +170,19 @@
 
 +++
 ### Macros: How to define a local macro:
+
 - Variant 1:
   - Stores “2+2” in a macro called Fred
   - Evaluates “2+2” when the macro is called
-```
-. local Fred 2+2
-```
+    ```
+    . local Fred 2+2
+    ```
 - Variant 2:
   - Evaluates right-hand side immediately and stores results in Fred
-```
-. local Fred = 2+2
-```
+    ```
+    . local Fred = 2+2
+    ```
+
 +++
 
 ### Macros: To use a macro
