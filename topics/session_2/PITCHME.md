@@ -4,7 +4,7 @@
 
 +++
 
-## Do Files [U 16]
+### Do Files [U 16]
 
 - A “program” in STATA is called a “do file”
 - A do file is a text file that contains a bunch of STATA commands
